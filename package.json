@@ -1,10 +1,12 @@
 {
 	"name": "@dogslobber/common",
-	"version": "1.0.13",
+	"version": "1.0.14",
 	"description": "common code for microservices course",
 	"main": "./build/index.js",
 	"types": "./build/index.d.ts",
-	"files": [ "build/**/*" ],
+	"files": [
+		"build/**/*"
+	],
 	"scripts": {
 		"clean": "del ./build/*",
 		"build": "npm run clean && tsc",
