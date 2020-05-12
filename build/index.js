@@ -13,4 +13,3 @@ __export(require("./middlewares/current-user"));
 __export(require("./middlewares/error-handler"));
 __export(require("./middlewares/require-auth"));
 __export(require("./middlewares/validate-request"));
-console.log('success');
