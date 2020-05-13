@@ -3,11 +3,8 @@ import { NotAuthorizedError } from '../errors/not-authorized-error';
 
 /**
  * Checks if currentUser is set on the request object
- * @param req 
- * @param res 
- * @param next 
  * 
- * @throws NotAuthorized Error
+ * @throws NotAuthorized Error which extends the base Error object
  */
 export const requireAuth = (req: Request, res: Response, next: NextFunction) => {
 	if (!req.currentUser) {
