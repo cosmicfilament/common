@@ -1,6 +1,6 @@
 {
 	"name": "@dogslobber/common",
-	"version": "1.0.23",
+	"version": "1.0.24",
 	"description": "common code for microservices course",
 	"repository": {
 		"type": "git",
@@ -8,13 +8,20 @@
 	},
 	"main": "./build/index.js",
 	"types": "./build/index.d.ts",
-	"files": [ "build/**/*" ],
+	"files": [
+		"build/**/*"
+	],
 	"scripts": {
 		"clean": "del-cli ./build/**",
 		"build": "npm run clean && tsc",
 		"pub": "git add . && git commit -m \"Updates\" && git push && npm version patch && npm run build && npm publish"
 	},
-	"keywords": [ "nodejs", "express", "errors", "middleware" ],
+	"keywords": [
+		"nodejs",
+		"express",
+		"errors",
+		"middleware"
+	],
 	"author": "",
 	"license": "ISC",
 	"devDependencies": {
