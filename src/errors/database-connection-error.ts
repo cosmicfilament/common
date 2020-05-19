@@ -1,11 +1,3 @@
-'use strict';
-
-/**
-  * @module database-connection-error.ts
-  * @author John Butler
-  * @description 
-*/
-
 import { CustomError } from './custom-error';
 
 export class DatabaseConnectionError extends CustomError {

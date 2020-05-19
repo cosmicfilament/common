@@ -1,11 +1,3 @@
-'use strict';
-
-/**
-  * @module bad-request-error.ts
-  * @author John Butler
-  * @description 
-*/
-
 import { CustomError } from './custom-error';
 
 export class BadRequestError extends CustomError {

@@ -1,11 +1,3 @@
-'use strict';
-
-/**
-  * @module not-found-error.ts
-  * @author John Butler
-  * @description 
-*/
-
 import { CustomError } from './custom-error';
 
 export class NotFoundError extends CustomError {

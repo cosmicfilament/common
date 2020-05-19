@@ -1,11 +1,3 @@
-'use strict';
-
-/**
-  * @module request-validation-error.ts
-  * @author John Butler
-  * @description 
-*/
-
 import { ValidationError } from 'express-validator';
 import { CustomError } from './custom-error';
 

@@ -1,10 +1,3 @@
-'use strict';
-
-/**
-  * @module current-user.ts
-  * @author John Butler
-  * @description 
-*/
 import { Request, Response, NextFunction } from 'express';
 import jwt from 'jsonwebtoken';
 

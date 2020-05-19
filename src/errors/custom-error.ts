@@ -1,11 +1,3 @@
-'use strict';
-
-/**
-  * @module custom-error.ts
-  * @author John Butler
-  * @description 
-*/
-
 export abstract class CustomError extends Error {
 	abstract statusCode: number;
 

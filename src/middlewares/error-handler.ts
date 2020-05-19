@@ -1,17 +1,3 @@
-'use strict';
-
-/**
-  * @module error-handler.ts
-  * @author John Butler
-  * @description sends back an error object with an array of error messages in it
-	* {
-	*		errors: {
-	* 		message: string, field?: string
-	*		}[]
-	*	}	
-	}
-*/
-
 import { Request, Response, NextFunction } from 'express';
 import { CustomError } from '../errors/custom-error';
 
