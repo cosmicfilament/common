@@ -7,22 +7,29 @@ interface UserPayload {
 }
 
 declare global {
-  namespace Express{
+  namespace Express {
     interface Request {
       currentUser?: UserPayload;
     }
   }
 }
 
-export const currentUser = (req: Request, res: Response, next: NextFunction) => {
-  // is user logged in ? set current user from jwt payload on req.currentUser : else nothing
-  if(!req.session?.jwt){
+export const currentUser = (
+  req: Request,
+  res: Response,
+  next: NextFunction
+) => {
+  if (!req.session?.jwt) {
     return next();
   }
-  try{
-    const payload = jwt.verify(req.session.jwt, process.env.JWT_KEY!) as UserPayload;
+
+  try {
+    const payload = jwt.verify(
+      req.session.jwt,
+      process.env.JWT_KEY!
+    ) as UserPayload;
     req.currentUser = payload;
-  }catch(error){
-  }
+  } catch (err) {}
+
   next();
 };
