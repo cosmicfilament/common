@@ -1,6 +1,6 @@
 {
 	"name": "@dogslobber/common",
-	"version": "1.0.29",
+	"version": "1.0.30",
 	"description": "common code for microservices course",
 	"repository": {
 		"type": "git",
